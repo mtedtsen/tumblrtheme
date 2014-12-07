@@ -1,0 +1,57 @@
+html{
+ margin:0;
+  padding:0;
+ 
+  height:100%;
+  width:100%;
+  
+ 
+ 
+}
+body{
+  background-color: #43454A;
+  font-family: 'Open Sans', sans-serif;
+
+  margin:0;
+  padding:0;
+ 
+  height:100%;
+  width:100%;
+}
+
+/*HEADER
+---------------------------------*/
+#header{
+  overflow:hidden;
+  font-family:'Norican', cursive, sans-serif;
+  letter-spacing: 1px;
+  font-weight:400;
+  color:#3C3C3B;
+  font-size:3em;
+
+  background-color:white;
+  text-align: center;
+ 
+}
+
+/*SUMMARY
+--------------------------------*/
+#name{
+  font-family:'Norican', cursive, sans-serif;
+  font-weight:400;
+  font-size:2em;
+
+}
+#summary{
+  overflow:hidden;
+  color:white; 
+  text-align:center;
+  background: #525252;
+}
+#profpic{
+  height:10em;
+  width:10em;
+  border-radius:5em;
+  -moz-border-radius:5em;
+  -webkit-border-radius:5em;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<!--  
+        .                                 .o8       oooo
+      .o8                                "888       `888
+    .o888oo oooo  oooo  ooo. .oo.  .oo.   888oooo.   888  oooo d8b
+      888   `888  `888  `888P"Y88bP"Y88b  d88' `88b  888  `888""8P
+      888    888   888   888   888   888  888   888  888   888
+      888 .  888   888   888   888   888  888   888  888   888    .o.
+      "888"  `V88V"V8P' o888o o888o o888o `Y8bod8P' o888o d888b   Y8P       
+      
+      -->
+
+  <head>
+    <title><!--{Title Random Ramblings}-->RandomRamblings</title>
+    <!--{block:Description}
+      <meta name="description" content="{MetaDescription}" />
+    {/block:Description}-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Norican' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+  
+    <div id="header" class="format">
+      <p><!--{Title Random Ramblings}-->Random Ramblings</p>
+     
+   
+     <a href="https://www.facebook.com/merridith.tedtsen" target="_blank" title="Facebook"><img src="Facebook.png" alt="Facebook"/></a>
+      <a href="https://www.flickr.com/photos/128545457@N05/" target="_blank" title="Flickr"><img src="Flickr.png" alt="Flickr"/></a>
+      <a href="http://instagram.com/merridith_tedtsen/" target="_blank" title="Instagram"><img src="Instagram.png" alt="Instagram"/></a>
+      <a href="https://www.linkedin.com/pub/merridith-tedtsen/88/617/9a1" target="_blank" title="LinkedIn"><image src="LinkedIn.png" alt="LinkedIn"/></a>
+      <a href="http://www.stumbleupon.com/stumbler/merriditht95/lists" target="_blank" title="Stumble"><img src="Stumble Upon.png" alt="Stumble Upon"/></a>
+
+        
+    </div>
+    
+    <div id="summary">
+      <p id="name">Merridith Tedtsen<p>
+      <!--{block:Description}
+        <p id="description">{Description}I'm new to Tumblr and I'm still finding way. As of right now, I see something I like, and I post it.</p>
+      {/block:Description}-->
+      <img id="profpic" src="person.jpeg" alt="Picture of Me"/>
+      <p>I'm new to Tumblr and I'm still<br> finding my way. As of right now, I<br> see something I like, and I post it.</p>
+    </div>
+    
+    <div id="headerpic">
+        <!-- ADD FLOWER PIC HERE -->
+    </div>
+    
+    <div class="alltheposts"
+      <ol id="posts">
+        {block:Posts}
+          {block:Text}
+            <li class="post text">
+              {block:Title}
+                <h3><a href="{Permalink}">{Title}</a></h3>
+              {/block:Title}{Body}
+            </li>
+          {/block:Text}
+          {block:Photo}
+            <li class="post photo">
+              <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+              {block:Caption}
+              <div class="caption">{Caption}</div>
+              {/block:Caption}
+            </li>
+          {/block:Photo}
+            
+      </ol>
+    </div>
+ 
+  </body>
+</html>
