@@ -61,6 +61,27 @@
               </li>
             </div>
           {/block:Text}
+
+          {block:Quote} 
+            <div class="post" id="quote">
+              <div id="footer">
+                <ul class="like_and_reblog_buttons">
+                  <li class="button">{ReblogButton}</li>
+                  <li class="button">{LikeButton}</li>
+                </ul><br>
+              </div>
+              <li class="postquote">
+                "{Quote}"
+                {block:Source}
+                  <div class="source">-{Source}</div>
+                {/block:Source}
+              </li>
+            </div>
+          {/block:Quote}
+        
+      
+        
+
         {/block:Posts}
       </div>
     </ul>
