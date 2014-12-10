@@ -1,108 +1,102 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{block:PostSummary}{PostSummary}{/block:PostSummary} |{Title} </title>
-    
+!!!
+%html
+  %head
+    %title {block:PostSummary}{PostSummary}{/block:PostSummary} |{Title}
     {block:Description}
-      <meta name="description" content="{MetaDescription}" />
+    %meta{:content => "{MetaDescription}", :name => "description"}/
     {/block:Description}
-    
-    <!--FAVICON-->
-    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACpfQ/yKZvP8AAAAA2/j6Ctz2/xsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARlMz/lOD7mgKO4f8AjMr/0/v8HAja/v8IxPf/W6fT/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqbr/wnG/f8Bhc3/AojQ/wCZ1v8F2vj/ALPt/wCg5P+y5vxjAAAAAAAAAAAAAAAAAAAAAAAAAAAMt+7/B6jY/wS8+f8EuvP/Abbx/wp9yP8Bntr/ALj5/wab9v8CmOL/4fP+AgAAAAAAAAAAAAAAAAAAAAC44vhHA7fy/w/K+/8Apur/C6v1/wSq7/8AVaL/AJXa/wKQ9f8Fkun/A5Df/wLE8/8G6P7/AAAAAAAAAAAAAAAAAAAAAACFv/8Htff/ArX2/wWB1f8Zbqr/BhEw/wkZUf8PieP/C6bp/wDa/f8D4v3/AuL6/w7j/v8AAAAAAAAAAAAAAAAAAAAAAIjF/wSJ5f8cnOv/AhRE/xghZf8ZJmr/AiJi/wmz//8C2f//BeX+/wDe9v+D5fT/AAAAAAAAAAAAAAAAxPn/LALk+/8J0/r/EIrE/ztBhP8+OoH/KTF+/xsmZP83y/z/AMD6/wLN/f8b4///AAAAAAAAAAAAAAAAAOT7/wbd/P8C2/z/Arr1/wCP4P87QoH/UlOX/yVGhf8pwvv/D9r//wDG+/8F4/3/JOb9/wfc9f8AAAAAAAAAAOT0/wMAx/n/BbT//wCf7f8GuPP/Ceb//w3W//8K0fj/Aej9/wLP/P8N7/v/Hu///wzl+P8n6Ov/AAAAAAAAAAAAAAAA0vf/IR20+v8A4+z/D8L6/wTm+f8Azfb/ANj7/xLT/v8H4fr/C9z6/wPx/P8y8///AAAAAAAAAAAAAAAAAAAAAAAAAAAS8u7/AMz//xbD/P8M8fz/BO39/wja/v8L3v//BPH+/wny///s9/+6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsuv9hAW6+P8Gv/7/KPD8/xTu+/8B6/7/FvD9/37u+/9T9+7/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtP38Tirz+v8+/v3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPz/AADwjwAA8A8AAMAPAADAAwAAwAEAAOABAADgAwAAgAEAAMABAADgAwAA4AcAAOAPAAD/nwAA//8AAA==" rel="icon" type="image/x-icon" />
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Norican' rel='stylesheet' type='text/css'>
-    
-  </head>
-
-  <body>
-    <div id="header" class="format">
-      <p id="title">{Title}</p>
-      <!--CONTACT BUTTONS-->
-      <div id="contactbuttons">
-        <a href="http://facebook.com/merridith.tedtsen" target="_blank" title="Facebook"><img src="http://static.tumblr.com/isnbmsj/OWGng7h0c/facebook.png" alt="Facebook"/></a>
-        <a href="https://www.flickr.com/photos/128545457@N05/" target="_blank" title="Flickr"><img src="http://static.tumblr.com/isnbmsj/OKyng7h21/flickr.png" alt="Flickr"/></a>
-        <a href="http://instagram.com/merridith_tedtsen/" target="_blank" title="Instagram"><img src="http://static.tumblr.com/isnbmsj/539ng7h3l/instagram.png" alt="Instagram"/></a>
-        <a href="https://www.linkedin.com/pub/merridith-tedtsen/88/617/9a1" target="_blank" title="LinkedIn"><image src="http://static.tumblr.com/isnbmsj/rhXng7h9x/linkedin.png" alt="LinkedIn"/></a>
-        <a href="http://www.stumbleupon.com/stumbler/merriditht95/lists" target="_blank" title="Stumble"><img src="http://static.tumblr.com/isnbmsj/Xqnng7hbr/stumbleupon.png" alt="Stumble Upon"/></a>
-      </div>
-    </div>
-    
-    <div id="summaryandheaderpic">
-      <div id="headerpic">
-        <!-- ADD FLOWER PIC HERE -->
-      </div>
-      <div id="summary">
-        <p id="name">Merridith Tedtsen<p>
-        <!--{block:Description}
-          <p id="description">{Description}I'm new to Tumblr and I'm still finding way. As of right now, I see something I like, and I post it.</p>
-        {/block:Description}-->
-        <img id="profpic" src="http://static.tumblr.com/isnbmsj/voEng94pe/spenc.jpg" alt="Picture of Meh Puppy"/>
-        <p>I'm new to Tumblr and I'm still trying to find my way around. As of right now, I  see something I like, and I post it.</p>
-      </div>
-    </div>
-
-    <ul id="posts">
-      <div id="content">
+    / FAVICON
+    %link{:href => "data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACpfQ/yKZvP8AAAAA2/j6Ctz2/xsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARlMz/lOD7mgKO4f8AjMr/0/v8HAja/v8IxPf/W6fT/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqbr/wnG/f8Bhc3/AojQ/wCZ1v8F2vj/ALPt/wCg5P+y5vxjAAAAAAAAAAAAAAAAAAAAAAAAAAAMt+7/B6jY/wS8+f8EuvP/Abbx/wp9yP8Bntr/ALj5/wab9v8CmOL/4fP+AgAAAAAAAAAAAAAAAAAAAAC44vhHA7fy/w/K+/8Apur/C6v1/wSq7/8AVaL/AJXa/wKQ9f8Fkun/A5Df/wLE8/8G6P7/AAAAAAAAAAAAAAAAAAAAAACFv/8Htff/ArX2/wWB1f8Zbqr/BhEw/wkZUf8PieP/C6bp/wDa/f8D4v3/AuL6/w7j/v8AAAAAAAAAAAAAAAAAAAAAAIjF/wSJ5f8cnOv/AhRE/xghZf8ZJmr/AiJi/wmz//8C2f//BeX+/wDe9v+D5fT/AAAAAAAAAAAAAAAAxPn/LALk+/8J0/r/EIrE/ztBhP8+OoH/KTF+/xsmZP83y/z/AMD6/wLN/f8b4///AAAAAAAAAAAAAAAAAOT7/wbd/P8C2/z/Arr1/wCP4P87QoH/UlOX/yVGhf8pwvv/D9r//wDG+/8F4/3/JOb9/wfc9f8AAAAAAAAAAOT0/wMAx/n/BbT//wCf7f8GuPP/Ceb//w3W//8K0fj/Aej9/wLP/P8N7/v/Hu///wzl+P8n6Ov/AAAAAAAAAAAAAAAA0vf/IR20+v8A4+z/D8L6/wTm+f8Azfb/ANj7/xLT/v8H4fr/C9z6/wPx/P8y8///AAAAAAAAAAAAAAAAAAAAAAAAAAAS8u7/AMz//xbD/P8M8fz/BO39/wja/v8L3v//BPH+/wny///s9/+6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsuv9hAW6+P8Gv/7/KPD8/xTu+/8B6/7/FvD9/37u+/9T9+7/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtP38Tirz+v8+/v3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPz/AADwjwAA8A8AAMAPAADAAwAAwAEAAOABAADgAwAAgAEAAMABAADgAwAA4AcAAOAPAAD/nwAA//8AAA==", :rel => "icon", :type => "image/x-icon"}/
+    %meta{:charset => "UTF-8"}
+      %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+        %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,700|Norican", :rel => "stylesheet", :type => "text/css"}
+  %body
+    #header.format
+      %p#title {Title}
+      / CONTACT BUTTONS
+      #contactbuttons
+        %a{:href => "http://facebook.com/merridith.tedtsen", :target => "_blank", :title => "Facebook"}
+          %img{:alt => "Facebook", :src => "http://static.tumblr.com/isnbmsj/OWGng7h0c/facebook.png"}/
+        %a{:href => "https://www.flickr.com/photos/128545457@N05/", :target => "_blank", :title => "Flickr"}
+          %img{:alt => "Flickr", :src => "http://static.tumblr.com/isnbmsj/OKyng7h21/flickr.png"}/
+        %a{:href => "http://instagram.com/merridith_tedtsen/", :target => "_blank", :title => "Instagram"}
+          %img{:alt => "Instagram", :src => "http://static.tumblr.com/isnbmsj/539ng7h3l/instagram.png"}/
+        %a{:href => "https://www.linkedin.com/pub/merridith-tedtsen/88/617/9a1", :target => "_blank", :title => "LinkedIn"}
+          %image{:alt => "LinkedIn", :src => "http://static.tumblr.com/isnbmsj/rhXng7h9x/linkedin.png"}/
+        %a{:href => "http://www.stumbleupon.com/stumbler/merriditht95/lists", :target => "_blank", :title => "Stumble"}
+          %img{:alt => "Stumble Upon", :src => "http://static.tumblr.com/isnbmsj/Xqnng7hbr/stumbleupon.png"}/
+    #summaryandheaderpic
+      #headerpic
+        / ADD FLOWER PIC HERE
+      #summary
+        %p#name
+          Merridith Tedtsen
+          %p
+            /
+              {block:Description}
+              <p id="description">{Description}I'm new to Tumblr and I'm still finding way. As of right now, I see something I like, and I post it.</p>
+              {/block:Description}
+            %img#profpic{:alt => "Picture of Meh Puppy", :src => "http://static.tumblr.com/isnbmsj/voEng94pe/spenc.jpg"}/
+            %p I'm new to Tumblr and I'm still trying to find my way around. As of right now, I  see something I like, and I post it.
+    %ul#posts
+      #content
         {block:Posts}
-          {block:Text}
-            <div class="post" id="text">
-              <div id="footer">
-                <ul class="like_and_reblog_buttons">
-                  <li class="button">{ReblogButton}</li>
-                  <li class="button">{LikeButton}</li>
-                </ul><br>
-              </div>
-              <li class="posttext" id="textcontent">
-                {block:Title}
-                  <h3><a id="texttitlelink" href="{Permalink}">{Title}</a></h3>
-                {/block:Title}{Body}
-              </li>
-            </div>
-          {/block:Text}
-
-          {block:Quote} 
-            <div class="post" id="quote">
-              <div id="footer">
-                <ul class="like_and_reblog_buttons">
-                  <li class="button">{ReblogButton}</li>
-                  <li class="button">{LikeButton}</li>
-                </ul><br>
-              </div>
-              <li class="postquote">
-                "{Quote}"
-                {block:Source}
-                  <div class="source">-{Source}</div>
-                {/block:Source}
-              </li>
-            </div>
-          {/block:Quote}
+        {block:Text}
+        #text.post
+          #footer
+            %ul.like_and_reblog_buttons
+              %li.button {ReblogButton}
+              %li.button {LikeButton}
+            %br
+          %li#textcontent.posttext
+            {block:Title}
+            %h3
+              %a#texttitlelink{:href => "{Permalink}"} {Title}
+            {/block:Title}{Body}
+        {/block:Text}
         
-          {block:Link}
-            <div class="post" id="link">
-              <div id="footer">
-                <ul class="like_and_reblog_buttons">
-                  <li class="button">{ReblogButton}</li>
-                  <li class="button">{LikeButton}</li>
-                </ul><br>
-              </div>
-              <li class="postlink">
-                <div class="linktitle"><a href="{URL}" class="link" {Target}>{Name}<br>&#8669;</a></div>
-                {block:Description}
-                  <div class="linkdescription">{Description}</div>
-                {/block:Description}
-              </li>
-            </div>
-          {/block:Link}
-    
-
-
+        {block:Quote}
+        #quote.post
+          #footer
+            %ul.like_and_reblog_buttons
+              %li.button {ReblogButton}
+              %li.button {LikeButton}
+            %br
+          %li.postquote
+            "{Quote}"
+            {block:Source}
+            .source -{Source}
+            {/block:Source}
+        {/block:Quote}
         
-
+        {block:Link}
+        #link.post
+          #footer
+            %ul.like_and_reblog_buttons
+              %li.button {ReblogButton}
+              %li.button {LikeButton}
+            %br
+          %li.postlink
+            .linktitle
+              <a href="{URL}" class="link" {Target}>{Name}
+              %br
+                ⇝
+            {block:Description}
+            .linkdescription {Description}
+            {/block:Description}
+        {/block:Link}
+        
+        {block:Photo}
+        #photo.post
+          #footer
+            %ul.like_and_reblog_buttons
+              %li.button {ReblogButton}
+              %li.button {LikeButton}
+            %br
+          %li.postphoto
+            %img#photoreal{:alt => "{PhotoAlt}", :src => "{PhotoURL-500}"}/
+            {block:Caption}
+            .caption {Caption}
+            {/block:Caption}
+        {/block:Photo}
         {/block:Posts}
-      </div>
-    </ul>
-
- </body>
-</html>
