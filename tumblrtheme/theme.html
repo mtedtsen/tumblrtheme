@@ -69,6 +69,24 @@
             {/block:Source}
         {/block:Quote}
         
+        {block:Link}
+        #link.post
+          #footer
+            %ul.like_and_reblog_buttons
+              %li.button {ReblogButton}
+              %li.button {LikeButton}
+            %br
+          %li.postlink
+            .linktitle
+              <a href="{URL}" class="link" {Target}>{Name}
+              %br
+                ⇝
+            {block:Description}
+            .linkdescription {Description}
+            {/block:Description}
+        {/block:Link}
+        
+        
         
         
         

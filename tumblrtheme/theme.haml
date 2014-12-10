@@ -79,7 +79,25 @@
             </div>
           {/block:Quote}
         
-      
+          {block:Link}
+            <div class="post" id="link">
+              <div id="footer">
+                <ul class="like_and_reblog_buttons">
+                  <li class="button">{ReblogButton}</li>
+                  <li class="button">{LikeButton}</li>
+                </ul><br>
+              </div>
+              <li class="postlink">
+                <div class="linktitle"><a href="{URL}" class="link" {Target}>{Name}<br>&#8669;</a></div>
+                {block:Description}
+                  <div class="linkdescription">{Description}</div>
+                {/block:Description}
+              </li>
+            </div>
+          {/block:Link}
+    
+
+
         
 
         {/block:Posts}
