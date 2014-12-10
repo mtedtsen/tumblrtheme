@@ -43,5 +43,27 @@
       </div>
     </div>
 
+    <ul id="posts">
+      <div id="content">
+        {block:Posts}
+          {block:Text}
+            <div class="post" id="text">
+              <div id="footer">
+                <ul class="like_and_reblog_buttons">
+                  <li class="button">{ReblogButton}</li>
+                  <li class="button">{LikeButton}</li>
+                </ul><br>
+              </div>
+              <li class="posttext" id="textcontent">
+                {block:Title}
+                  <h3><a id="texttitlelink" href="{Permalink}">{Title}</a></h3>
+                {/block:Title}{Body}
+              </li>
+            </div>
+          {/block:Text}
+        {/block:Posts}
+      </div>
+    </ul>
+
  </body>
 </html>
