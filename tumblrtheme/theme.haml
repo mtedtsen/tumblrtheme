@@ -10,7 +10,27 @@
     %meta{:charset => "UTF-8"}
       %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
         %link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:400,700|Norican", :rel => "stylesheet", :type => "text/css"}
-  %body
+          :css
+      html{
+        margin:0;
+        padding:0;
+        height:100%;
+        width:100%;
+      }
+      body{
+        background-color: #43454A;
+        font-family: 'Open Sans', sans-serif;
+        margin:0;
+        padding:0;
+        height:100%;
+        width:100%;
+      }
+
+  
+
+
+    {customCSS}
+      %body
     #header.format
       %p#title {Title}
       / CONTACT BUTTONS
