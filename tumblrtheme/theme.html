@@ -1,295 +1,47 @@
 <!DOCTYPE html>
 <html>
-
-<!--  
-        .                                 .o8       oooo
-      .o8                                "888       `888
-    .o888oo oooo  oooo  ooo. .oo.  .oo.   888oooo.   888  oooo d8b
-      888   `888  `888  `888P"Y88bP"Y88b  d88' `88b  888  `888""8P
-      888    888   888   888   888   888  888   888  888   888
-      888 .  888   888   888   888   888  888   888  888   888    .o.
-      "888"  `V88V"V8P' o888o o888o o888o `Y8bod8P' o888o d888b   Y8P       
-      
-      -->
-
   <head>
     <title>{block:PostSummary}{PostSummary}{/block:PostSummary} |{Title} </title>
     
     {block:Description}
       <meta name="description" content="{MetaDescription}" />
     {/block:Description}
- 
+    
+    <!--FAVICON-->
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACpfQ/yKZvP8AAAAA2/j6Ctz2/xsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARlMz/lOD7mgKO4f8AjMr/0/v8HAja/v8IxPf/W6fT/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADqbr/wnG/f8Bhc3/AojQ/wCZ1v8F2vj/ALPt/wCg5P+y5vxjAAAAAAAAAAAAAAAAAAAAAAAAAAAMt+7/B6jY/wS8+f8EuvP/Abbx/wp9yP8Bntr/ALj5/wab9v8CmOL/4fP+AgAAAAAAAAAAAAAAAAAAAAC44vhHA7fy/w/K+/8Apur/C6v1/wSq7/8AVaL/AJXa/wKQ9f8Fkun/A5Df/wLE8/8G6P7/AAAAAAAAAAAAAAAAAAAAAACFv/8Htff/ArX2/wWB1f8Zbqr/BhEw/wkZUf8PieP/C6bp/wDa/f8D4v3/AuL6/w7j/v8AAAAAAAAAAAAAAAAAAAAAAIjF/wSJ5f8cnOv/AhRE/xghZf8ZJmr/AiJi/wmz//8C2f//BeX+/wDe9v+D5fT/AAAAAAAAAAAAAAAAxPn/LALk+/8J0/r/EIrE/ztBhP8+OoH/KTF+/xsmZP83y/z/AMD6/wLN/f8b4///AAAAAAAAAAAAAAAAAOT7/wbd/P8C2/z/Arr1/wCP4P87QoH/UlOX/yVGhf8pwvv/D9r//wDG+/8F4/3/JOb9/wfc9f8AAAAAAAAAAOT0/wMAx/n/BbT//wCf7f8GuPP/Ceb//w3W//8K0fj/Aej9/wLP/P8N7/v/Hu///wzl+P8n6Ov/AAAAAAAAAAAAAAAA0vf/IR20+v8A4+z/D8L6/wTm+f8Azfb/ANj7/xLT/v8H4fr/C9z6/wPx/P8y8///AAAAAAAAAAAAAAAAAAAAAAAAAAAS8u7/AMz//xbD/P8M8fz/BO39/wja/v8L3v//BPH+/wny///s9/+6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsuv9hAW6+P8Gv/7/KPD8/xTu+/8B6/7/FvD9/37u+/9T9+7/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAtP38Tirz+v8+/v3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAPz/AADwjwAA8A8AAMAPAADAAwAAwAEAAOABAADgAwAAgAEAAMABAADgAwAA4AcAAOAPAAD/nwAA//8AAA==" rel="icon" type="image/x-icon" />
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" type="text/css" href="theme.css">-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700|Norican' rel='stylesheet' type='text/css'>
-    <style type="text/css">
-html{
- margin:0;
-  padding:0;
- 
-  height:100%;
-  width:100%;
-  
- 
- 
-}
-body{
-  background-color: #43454A;
-  font-family: 'Open Sans', sans-serif;
-
-  margin:0;
-  padding:0;
- 
-  height:100%;
-  width:100%;
-}
-
-/*HEADER
----------------------------------*/
-#header{
-  overflow:hidden;
-  font-family:'Norican', cursive, sans-serif;
-  letter-spacing: 1px;
-  font-weight:400;
-  color:#3C3C3B;
-  font-size:3em;
-
-  background-color:white;
-  text-align: center;
- 
-  margin-left:auto;
-  margin-right:auto;
-  width:5.8em;
-
-}
-
-/*SUMMARY
---------------------------------*/
-#name{
-  font-family:'Norican', cursive, sans-serif;
-  font-weight:400;
-  font-size:2em;
-
-}
-#summary{
-  overflow:hidden;
-  color:white; 
-  text-align:center;
-  background: #525252;
-
-  margin-bottom:0em;
-  margin-left:auto;
-  margin-right:auto;
-  width:17.5em;
- 
-}
-#profpic{
-  height:7em;
-  width:7em;
-  border-radius:3.5em;
-  -moz-border-radius:3.5em;
-  -webkit-border-radius:3.5em;
-
- 
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-
-  
-  border: 0.3em solid white;
-}
-/*HEADER PIC
----------------------------------*/
-
-#headerpic{
-  height:22.5em;  
-  width:45.7em;
-
-  background-image: url("http://static.tumblr.com/isnbmsj/XpBng8co3/fieldoyellow.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:100% 100%;
-
-  margin-left:-45.7em;
-  margin-top:-22.5em;
-  margin-bottom:0em;
- 
-}
-
-/*POSTS
------------------------------------------------------*/
-
-.post{
-  background: white;
-  text-align:center;
-  
-  margin-top:1em;
-  margin-left:auto;
-  margin-right:auto;
-  min-height:22.5em;
-  width: 17.5em;
-
-  overflow:hidden;
-  
-  border-radius:0.2em;
-  
- 
-}
-
-
-#posts{
-  list-style-type:none;  
-  list-style-type:inside;
-  padding-left:0;
-  
-   text-overflow:ellipsis;
-}
-.container{
-  /*height:22.5em;*/
-  width:17.5em;
-  text-align:center;
-  
-  margin-left:auto;
-  margin-right:auto;
- 
-}
-.wrapper {
-  /*min-height: 100%;
-  height: auto !important;
-  height: 19.5em;*/
-  margin: 0 auto -3em;
-  width:auto;
-  padding-bottom:2.5em;
-  
-  text-overflow:ellipsis;
- 
-}
-.footer, .push {
-  height: 3em;
-  border-radius: 0 0 0.2em 0.2em;
-  background-color:#F8F8F8;
-}
-/*TEXT SPECIFIC
----------------------------------*/
-#text{
-  text-align:left;
-  
-  text-overflow:ellipsis;
-}
-#textcontent{
-  padding-left:1em;    
-  padding-right:1em;
-  
-}
-
-#texttitlelink,a:link {
-    text-decoration: none;
-    color: black;
-    font-size:1.4em;
-}
-/*FOOTER
------------------------------------*/
- .like_and_reblog_buttons {
-                border: 1px solid #e8e8e8;
-                border-radius: 3px;
-                list-style: none;
-            }
-
-            .like_and_reblog_buttons li {
-                float: right;
-                margin: 0;
-                padding: 13px 7px 0px 7px;
-                height: 20px;
-            }
-            #dateinfooter{
-                float:left;
-                font-size:0.7em;
-                color: #B0B0B0 ;
-                display:inline-block;
-                
-                padding-left:1em;
-                padding-top:0.5em;
-            }
-     
-{customCSS}
-    </style>
- 
+    
   </head>
-<!--HTML STARTS HERE--------------------------------------------------->
-  <body>
-  
-    <div id="header" class="format">
- 
-      <p id="title">{Title}</p>
-     
-   
-     <a href="http://facebook.com/merridith.tedtsen" target="_blank" title="Facebook"><img src="http://static.tumblr.com/isnbmsj/OWGng7h0c/facebook.png" alt="Facebook"/></a>
-      <a href="https://www.flickr.com/photos/128545457@N05/" target="_blank" title="Flickr"><img src="http://static.tumblr.com/isnbmsj/OKyng7h21/flickr.png" alt="Flickr"/></a>
-      <a href="http://instagram.com/merridith_tedtsen/" target="_blank" title="Instagram"><img src="http://static.tumblr.com/isnbmsj/539ng7h3l/instagram.png" alt="Instagram"/></a>
-      <a href="https://www.linkedin.com/pub/merridith-tedtsen/88/617/9a1" target="_blank" title="LinkedIn"><image src="http://static.tumblr.com/isnbmsj/rhXng7h9x/linkedin.png" alt="LinkedIn"/></a>
-      <a href="http://www.stumbleupon.com/stumbler/merriditht95/lists" target="_blank" title="Stumble"><img src="http://static.tumblr.com/isnbmsj/Xqnng7hbr/stumbleupon.png" alt="Stumble Upon"/></a>
 
-   
+  <body>
+    <div id="header" class="format">
+      <p id="title">{Title}</p>
+      <!--CONTACT BUTTONS-->
+      <div id="contactbuttons">
+        <a href="http://facebook.com/merridith.tedtsen" target="_blank" title="Facebook"><img src="http://static.tumblr.com/isnbmsj/OWGng7h0c/facebook.png" alt="Facebook"/></a>
+        <a href="https://www.flickr.com/photos/128545457@N05/" target="_blank" title="Flickr"><img src="http://static.tumblr.com/isnbmsj/OKyng7h21/flickr.png" alt="Flickr"/></a>
+        <a href="http://instagram.com/merridith_tedtsen/" target="_blank" title="Instagram"><img src="http://static.tumblr.com/isnbmsj/539ng7h3l/instagram.png" alt="Instagram"/></a>
+        <a href="https://www.linkedin.com/pub/merridith-tedtsen/88/617/9a1" target="_blank" title="LinkedIn"><image src="http://static.tumblr.com/isnbmsj/rhXng7h9x/linkedin.png" alt="LinkedIn"/></a>
+        <a href="http://www.stumbleupon.com/stumbler/merriditht95/lists" target="_blank" title="Stumble"><img src="http://static.tumblr.com/isnbmsj/Xqnng7hbr/stumbleupon.png" alt="Stumble Upon"/></a>
+      </div>
     </div>
     
-    <div id="summary">
-      <p id="name">Merridith Tedtsen<p>
-      <!--{block:Description}
-        <p id="description">{Description}I'm new to Tumblr and I'm still finding way. As of right now, I see something I like, and I post it.</p>
-      {/block:Description}-->
-      <img id="profpic" src="http://static.tumblr.com/isnbmsj/voEng94pe/spenc.jpg" alt="Picture of Meh Puppy"/>
-      <p>I'm new to Tumblr and I'm still<br> finding my way. As of right now, I<br> see something I like, and I post it.</p>
-    </div>
-    
-    <div id="headerpic">
+    <div id="summaryandheaderpic">
+      <div id="headerpic">
         <!-- ADD FLOWER PIC HERE -->
+      </div>
+      <div id="summary">
+        <p id="name">Merridith Tedtsen<p>
+        <!--{block:Description}
+          <p id="description">{Description}I'm new to Tumblr and I'm still finding way. As of right now, I see something I like, and I post it.</p>
+        {/block:Description}-->
+        <img id="profpic" src="http://static.tumblr.com/isnbmsj/voEng94pe/spenc.jpg" alt="Picture of Meh Puppy"/>
+        <p>I'm new to Tumblr and I'm still trying to find my way around. As of right now, I  see something I like, and I post it.</p>
+      </div>
     </div>
-    
-    <ul id="posts">
-      {block:Posts}
-        <div class="container">
-          <div class="wrapper">
-            <div class="post" id="text">
-              {block:Text}
-                <li class="posttext" id="textcontent">
-                  {block:Title}
-                    <h3><a id="texttitlelink" href="{Permalink}">{Title}</a></h3>
-                  {/block:Title}{Body}
-                </li>
-              {/block:Text}
-            </div>
-          </div>
-          <div class="footer">
-            <p id="dateinfooter">{block:Date}{Month} {DayOfMonth}, {Year}{/block:Date}</p>   
-            <ul class="like_and_reblog_buttons">
-             
-              <li>{ReblogButton}</li>
-              <li>{LikeButton}</li>
-          </ul>
-          
-          </div>
-        </div>
-        
-        <div class="container"></div>
-        <div class-"wrapper"></div>
-        {block:Quote} 
-         <li class="post quote">
-           "{Quote}"
-             {block:Source}
-               <div class="source">{Source}</div>
-             {/block:Source}
-         </li>
-        {/block:Quote}
-        </div>
-        </div>
-    
-      {/block:Posts}
-    </ul>
- 
-  </body>
+
+ </body>
 </html>
